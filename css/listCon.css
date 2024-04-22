@@ -1,0 +1,101 @@
+.listCon {
+  padding: 10rem 0;
+}
+
+/* ul  */
+.listCon .inner.mw {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listCon .inner {
+  display: block;
+}
+/* li  */
+.sportsList {
+  display: flex;
+  flex-direction: row;
+
+  box-sizing: border-box;
+  padding-bottom: 3.2rem;
+  width: calc(50% - 1rem);
+}
+.sportsList .grayCon {
+  flex-direction: column;
+
+  padding: 3rem;
+  padding-right: 20rem;
+  gap: 16px;
+  background: var(--color-lightGray);
+}
+.grayCon h5 {
+  padding-bottom: 1.6rem;
+}
+.sportsList .more {
+  color: var(--color-green);
+  background-color: var(--color-Charcoal);
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* pgCon 부분 시작 */
+.pgCon {
+  margin-top: 10rem;
+}
+.pgCon .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.page-item .prev,
+.page-item .next {
+  padding: 2rem 3rem;
+}
+.page-link {
+  padding: 2rem 3rem;
+  border: 1px solid var(--color-gray);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--color-blue);
+  color: var(--color-lightGray);
+}
+
+.listMore {
+  border: 1px solid var(--color-Charcoal);
+  text-align: center;
+  padding: 2rem 0;
+  display: none;
+}
+
+@media (max-width: 1676px) {
+  .listCon .inner.mw {
+    justify-content: center;
+  }
+}
+@media (max-width: 1656px) {
+  .sportsList {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sportsList .grayCon {
+    text-align: center;
+    padding-right: 3rem;
+  }
+  .sportsList .more {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .pgCon .pagination {
+    display: none;
+  }
+  .listMore {
+    display: block;
+  }
+}
