@@ -41,7 +41,7 @@
 }
 
 /* pgCon 부분 시작 */
-.pgCon {
+/* .pgCon {
   margin-top: 10rem;
 }
 .pgCon .pagination {
@@ -51,8 +51,8 @@
   align-items: center;
 }
 
-.page-item .prev,
-.page-item .next {
+.prev,
+.next {
   padding: 2rem 3rem;
 }
 .page-link {
@@ -63,7 +63,12 @@
 .pagination .page-item.active .page-link {
   background-color: var(--color-blue);
   color: var(--color-lightGray);
-}
+} */
+
+
+
+
+
 
 .listMore {
   border: 1px solid var(--color-Charcoal);
@@ -72,6 +77,14 @@
   display: none;
 }
 
+.disabled{
+  color: rgba(12, 16, 41, 0.5);
+  cursor: default;
+}
+
+.hidden{
+  display: none;
+}
 @media (max-width: 1676px) {
   .listCon .inner.mw {
     justify-content: center;

@@ -109,7 +109,7 @@ footer {
 .hd .gnb a:hover {
   color: var(--color-green);
 }
-.icon {
+.ham, .close {
   display: none;
 }
 
@@ -180,16 +180,24 @@ select::-ms-expand {
 }
 
 @media (max-width: 930px) {
+  .hd .mw {
+    width: 70%;
+  }
   .gnb {
     display: none;
   }
-  .icon {
+  .ham {
     display: block;
+  }
+
+  .mainVisual {
+    width: 100%;
   }
 
   .search-Con .inner {
     display: block;
   }
+
   #sportsSelect,
   .search-input,
   .search-Btn {
@@ -199,5 +207,10 @@ select::-ms-expand {
   #sportsSelect,
   .search-input {
     margin-bottom: 1.6rem;
+  }
+}
+@media (max-width: 414px) {
+  .logo img {
+    width: 10rem;
   }
 }

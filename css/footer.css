@@ -2,6 +2,10 @@ footer {
   background: var(--color-Charcoal);
 }
 
+footer > * {
+  border: 1px solid tomato;
+}
+
 .footer-Con {
   padding: 10rem 0;
 
@@ -10,8 +14,9 @@ footer {
 }
 
 .footer-leftBox,
-.footer-social{
+.footer-social {
   max-width: 44rem;
+  width: 100%;
 }
 .footer-logo {
   margin-bottom: 4.8rem;
@@ -22,7 +27,7 @@ footer {
   font-weight: 300;
 }
 
-.footer-leftBox .footer-Box {
+.footer-Box {
   border: 1px solid white;
   background-color: #242a32;
   padding: 36px 217px 36px 37px;
@@ -39,14 +44,14 @@ footer {
 .footer-social {
   display: flex;
   flex-direction: column;
-  width: 44rem;
+  
   gap: 1.8rem;
 }
 .footer-social h5 {
   color: white;
   margin-bottom: 2.4rem;
 }
-.footer-social .input-email {
+.input-email {
   height: 65px;
   padding: 0 3.2rem;
   border: 1px solid #485059;
@@ -77,14 +82,29 @@ footer {
   .footer-Con {
     flex-direction: column;
     gap: 6rem;
-    max-width: 44rem;
+    
   }
+  .footer-Box {padding: 2rem;}
   .input-email {
-    width: 100%;
-  }
-
-  .footer-social .input-email {
     padding: 0;
     text-align: center;
+  }
+  .btn-green{
+    width: 100%;
+  }
+}
+
+@media (max-width: 930px) {
+  .foot {
+    width: 100%;
+  }
+  .foot .mw {
+    width: 80%;
+  }
+}
+
+@media (max-width: 414px) {
+  .footer-logo img {
+    width: 14rem;
   }
 }
