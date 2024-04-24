@@ -16,6 +16,7 @@
 .prev:hover,
 .next:hover {
   color: var(--color-blue);
+  cursor: pointer;
 }
 
 /* li  */
@@ -70,6 +71,7 @@
 .page-item.on {
   background-color: var(--color-blue);
   color: var(--color-lightGray);
+  cursor: pointer;
 }
 
 .listMore {

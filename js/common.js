@@ -30,6 +30,7 @@ closeIcon.addEventListener('click', function () {
   closeIcon.style.display = 'none';
 });
 
+//페이지네이션
 const moveToPage = async (pageNum) => {
   page = pageNum;
   const url = new URL(
@@ -45,6 +46,7 @@ const pagination = () => {
     pageGroup * groupSize
   );
   let firstPage = (pageGroup - 1) * groupSize + 1;
+  let totalGroup = Math.ceil(totalResults / pageSize);
 
   let paginationHtml = `<button class="prev"><i class="fa-solid fa-angle-left"></i></button>`;
   for (let i = firstPage; i <= lastPage; i++) {
@@ -55,7 +57,44 @@ const pagination = () => {
   paginationHtml += `<button class="next"><i class="fa-solid fa-angle-right"></i></button>`;
 
   document.querySelector('.pgCon').innerHTML = paginationHtml;
+
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+
+  // .next 버튼 클릭 시 이동
+  document.querySelector('.next').addEventListener('click', function () {
+    if (pageGroup < totalGroup && lastPage == page) {
+      moveToPage(lastPage + 1);
+    } else {
+      moveToPage(page + 1);
+    }
+  });
+
+  // .prev 버튼 클릭 시 이동
+  document.querySelector('.prev').addEventListener('click', function () {
+    if (pageGroup > 1 && firstPage == page) {
+      moveToPage(firstPage - 1);
+    } else {
+      moveToPage(page - 1);
+    }
+  });
+
+  // 현재 페이지가 1번이면 .prev 버튼 숨기기
+  if (page === 1) {
+    prevButton.style.display = 'none';
+  } else {
+    prevButton.style.display = 'inline-block';
+  }
+
+  // 현재 페이지가 마지막 페이지면 .next 버튼 숨기기
+  if (lastPage === totalResults) {
+    nextButton.style.display = 'none';
+  } else {
+    nextButton.style.display = 'inline-block';
+  }
 };
+
+pagination(); // 페이지 네비게이션 초기 렌더링
 
 const fetchList = async (url) => {
   try {
@@ -128,11 +167,9 @@ getLatestDatas();
 
 // 질문 : 왜 부드러운 스크롤이 적용안 되는지 모르겠습니다.
 document
-  .getElementById('scrollButton')
+  .getElementById('#scrollButton')
   .addEventListener('click', function (event) {
-    event.preventDefault(); // 기본 동작 방지
+    // event.preventDefault(); // 기본 동작 방지
     const targetElement = document.getElementById('target');
     targetElement.scrollIntoView({ behavior: 'smooth' }); // 부드러운 스크롤 적용
   });
-
-
