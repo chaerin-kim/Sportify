@@ -19,15 +19,18 @@ window.addEventListener('resize', function () {
 
 const hamIcon = document.querySelector('.ham');
 const closeIcon = document.querySelector('.close');
+const gnb = document.querySelector('.gnb');
 
 hamIcon.addEventListener('click', function () {
   closeIcon.style.display = 'block';
   hamIcon.style.display = 'none';
+  gnb.classList.add('active');
 });
 
 closeIcon.addEventListener('click', function () {
   hamIcon.style.display = 'block';
   closeIcon.style.display = 'none';
+  gnb.classList.remove('active');
 });
 
 //페이지네이션

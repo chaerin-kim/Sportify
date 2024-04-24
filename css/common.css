@@ -109,7 +109,8 @@ footer {
 .hd .gnb a:hover {
   color: var(--color-green);
 }
-.ham, .close {
+.ham,
+.close {
   display: none;
 }
 
@@ -165,14 +166,36 @@ footer {
 }
 
 @media (max-width: 930px) {
+  .hd {
+    position: relative;
+  }
   .hd .mw {
     width: 70%;
+  }
+  .hd .navCon {
+    display: block;
   }
   .gnb {
     display: none;
   }
+  .gnb.active {
+    display: block;
+  }
+  .gnb.active a {
+    margin: 4.2rem 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    text-align: center;
+  }
   .ham {
     display: block;
+  }
+
+  .close {
+    position: absolute;
+    top: 2.5rem;
   }
 
   .mainVisual {
