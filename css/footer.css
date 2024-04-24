@@ -2,10 +2,6 @@ footer {
   background: var(--color-Charcoal);
 }
 
-footer > * {
-  border: 1px solid tomato;
-}
-
 .footer-Con {
   padding: 10rem 0;
 
@@ -44,7 +40,7 @@ footer > * {
 .footer-social {
   display: flex;
   flex-direction: column;
-  
+
   gap: 1.8rem;
 }
 .footer-social h5 {
@@ -82,14 +78,15 @@ footer > * {
   .footer-Con {
     flex-direction: column;
     gap: 6rem;
-    
   }
-  .footer-Box {padding: 2rem;}
+  .footer-Box {
+    padding: 2rem;
+  }
   .input-email {
     padding: 0;
     text-align: center;
   }
-  .btn-green{
+  .btn-green {
     width: 100%;
   }
 }

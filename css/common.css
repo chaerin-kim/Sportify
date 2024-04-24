@@ -138,21 +138,6 @@ footer {
   gap: 1.6rem;
 }
 
-/* 질문 1 : select 아이콘 변경 왜 안되는지 모르겠습니다*/
-/* select {
-  
-  appearance: none;
-  -webkit-appearance: none; 
-  -moz-appearance: none;
-
-  background-image: url(../img/gridicons_dropdown.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 10px) center;
-}
-select::-ms-expand {
-  display: none;
-}  */
-
 #sportsSelect {
   font-family: var(--btn-font-family);
   font-size: 1.6rem;
