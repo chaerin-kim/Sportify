@@ -6,7 +6,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-'국민체육진흥공단_스포츠강좌이용권강좌정보' api를 연동하여 강좌정보를 리스트화 한 세미프로젝트입니다.
+'국민체육진흥공단_스포츠강좌이용권강좌정보' api를 연동하여 강좌정보를 리스트화 한 세미프로젝트입니다.<br/>
 해당 api에 기재된 url을 연동하여 유저들이 관심있는 강좌들은 직접 예약할 수 있도록 하였습니다.
 
 
@@ -14,10 +14,10 @@
 [https://github.com/chaerin-kim/Sportify]
 
 
-## 📖 정보
+## 📖 참조
 
-디자인은 'Designed byVictorFlow Templates' 을 참조하였으며, 그와 다른 디자인 부분은 Api제공기능에 맞게 직접 수정을 했습니다.
-
+디자인은 'Designed byVictorFlow Templates' 을 참조하였으며, 그와 다른 디자인 부분은 Api제공기능에 맞게 직접 수정을 했습니다.<br/>
+국민체육진흥공단_스포츠강좌이용권강좌정보 : https://www.culture.go.kr/data/openapi/openapiView.do?id=402&category=E&gubun=A#/default/%EC%9A%94%EC%B2%AD%EB%A9%94%EC%8B%9C%EC%A7%80_Get
 
 ## 💣개발시 겪은 이슈 및 해결방법
 
