@@ -11,13 +11,13 @@
 
 
  ![Mockup_스포츠강좌](https://github.com/chaerin-kim/Sportify/assets/82197400/39f0a58a-3d32-4eed-916f-422be86cd9c6)
-
+[https://github.com/chaerin-kim/Sportify]
 
 
 ## 📖 정보
 
 디자인은 'Designed byVictorFlow Templates' 을 참조하였으며, 그와 다른 디자인 부분은 Api제공기능에 맞게 직접 수정을 했습니다.
-[https://github.com/chaerin-kim/Sportify]
+
 
 ## 💣개발시 겪은 이슈 및 해결방법
 
