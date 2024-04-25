@@ -19,7 +19,7 @@
 디자인은 'Designed byVictorFlow Templates' 을 참조하였으며, 그와 다른 디자인 부분은 Api제공기능에 맞게 직접 수정을 했습니다.<br/>
 국민체육진흥공단_스포츠강좌이용권강좌정보 : https://www.culture.go.kr/data/openapi/openapiView.do?id=402&category=E&gubun=A#/default/%EC%9A%94%EC%B2%AD%EB%A9%94%EC%8B%9C%EC%A7%80_Get
 
-## 💣개발시 겪은 이슈 및 해결방법
+## 💣 개발시 겪은 이슈 및 해결방법
 
 notion : [https://shiny-swan-11b.notion.site/Sportify-5b70ecd1603b4f0596eaf0220c203f12?pvs=4]
 
