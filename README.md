@@ -21,7 +21,7 @@
 
 ## 💣개발시 겪은 이슈 및 해결방법
 
-![image](https://github.com/chaerin-kim/Sportify/assets/82197400/e39e0c5d-e257-4e72-bbb3-553ffcc9a59a) notion : [https://shiny-swan-11b.notion.site/Sportify-5b70ecd1603b4f0596eaf0220c203f12?pvs=4]
+notion : [https://shiny-swan-11b.notion.site/Sportify-5b70ecd1603b4f0596eaf0220c203f12?pvs=4]
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
