@@ -87,6 +87,9 @@
 }
 
 @media (max-width: 1676px) {
+  .listCon {
+    width: 100%;
+  }
   .listCon .inner.mw {
     justify-content: center;
   }

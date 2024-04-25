@@ -33,6 +33,8 @@ closeIcon.addEventListener('click', function () {
   gnb.classList.remove('active');
 });
 
+
+
 //페이지네이션
 const moveToPage = async (pageNum) => {
   page = pageNum;
@@ -40,6 +42,11 @@ const moveToPage = async (pageNum) => {
     `http://api.kcisa.kr/openapi/service/rest/meta2018/getKSPD0720184?serviceKey=${API_KEY}&numOfRows=${Rows}&pageNo=${page}`
   );
   await fetchList(url);
+
+  // 페이지 이동하고, 스르륵! 움직이게
+  const targetElement = document.getElementById('target');
+  targetElement.scrollIntoView({ behavior: 'smooth' });
+
 };
 
 const pagination = () => {
@@ -53,9 +60,9 @@ const pagination = () => {
 
   let paginationHtml = `<button class="prev"><i class="fa-solid fa-angle-left"></i></button>`;
   for (let i = firstPage; i <= lastPage; i++) {
-    paginationHtml += `<a href="#target" id="scrollButton" class="page-item ${
+    paginationHtml += `<span id="scrollButton" class="page-item ${
       i == page ? 'on' : ''
-    }" onclick="moveToPage(${i})">${i}</a>`;
+    }" onclick="moveToPage(${i})">${i}</span>`;
   }
   paginationHtml += `<button class="next"><i class="fa-solid fa-angle-right"></i></button>`;
 
@@ -168,11 +175,4 @@ const renderList = (sportsLists) => {
 
 getLatestDatas();
 
-// 질문 : 왜 부드러운 스크롤이 적용안 되는지 모르겠습니다.
-document
-  .getElementById('#scrollButton')
-  .addEventListener('click', function (event) {
-    // event.preventDefault(); // 기본 동작 방지
-    const targetElement = document.getElementById('target');
-    targetElement.scrollIntoView({ behavior: 'smooth' }); // 부드러운 스크롤 적용
-  });
+
