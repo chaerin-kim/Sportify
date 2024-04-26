@@ -7,12 +7,18 @@
 [![Downloads Stats][npm-downloads]][npm-url]
 
 '국민체육진흥공단_스포츠강좌이용권강좌정보' api를 연동하여 강좌정보를 리스트화 한 세미프로젝트입니다.<br/>
-해당 api에 기재된 url을 연동하여 유저들이 관심있는 강좌들은 직접 예약할 수 있도록 하였습니다.
+해당 api에 기재된 url을 연동하여 유저들이 관심있는 강좌들은 직접 예약할 수 있도록 하였습니다.<br/>
+
+진행기간 : 24.04.18 ~  24.04.24
 
 
  ![Mockup_스포츠강좌](https://github.com/chaerin-kim/Sportify/assets/82197400/39f0a58a-3d32-4eed-916f-422be86cd9c6)
 [https://github.com/chaerin-kim/Sportify]
 
+## ✅ 주요기능
+
+- 페이지네이션
+- api 연결 및 재구성
 
 ## 📖 참조
 
