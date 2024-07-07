@@ -3,7 +3,7 @@
 > 사용자들이 스포츠 강좌들을 찾고, 강좌에 대한 정보를 확인하여 예약할 수 있는 웹사이트입니다.
 
 [![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+
 [![Downloads Stats][npm-downloads]][npm-url]
 
 '국민체육진흥공단_스포츠강좌이용권강좌정보' api를 연동하여 강좌정보를 리스트화 한 세미프로젝트입니다.<br/>
